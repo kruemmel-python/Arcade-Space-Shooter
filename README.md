@@ -1,4 +1,5 @@
 # Arcade-Space-Shooter
+![Uploading intro.gif…]()
 
 Ein spannendes Shooter-Spiel mit Pygame, in dem du feindliche Schiffe abschießen und dein eigenes Raumschiff steuern musst, um Punkte zu sammeln und Level aufzusteigen. Das Spiel speichert Highscores in einer SQLite-Datenbank.
 
