@@ -1,6 +1,7 @@
 # Arcade-Space-Shooter
 
-![intro](https://github.com/kruemmel-python/Arcade-Space-Shooter/assets/169469747/4b51c19f-1e52-4f54-ac1d-b245ee08b491)
+![intro](https://github.com/kruemmel-python/Arcade-Space-Shooter/assets/169469747/b321f938-ead7-43b7-bab6-35d9d78cd50e)
+
 
 Ein spannendes Shooter-Spiel mit Pygame, in dem du feindliche Schiffe abschießen und dein eigenes Raumschiff steuern musst, um Punkte zu sammeln und Level aufzusteigen. Das Spiel speichert Highscores in einer SQLite-Datenbank.
 
