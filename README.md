@@ -1,85 +1,107 @@
-# Arcade-Space-Shooter
-
+# Arcade Space Shooter
 ![intro](https://github.com/kruemmel-python/Arcade-Space-Shooter/assets/169469747/b321f938-ead7-43b7-bab6-35d9d78cd50e)
+Willkommen zum Arcade Space Shooter! Dies ist ein klassisches Weltraum-Shooter-Spiel, bei dem Sie durch den Weltraum fliegen, Gegner abschießen und Punkte sammeln. Das Spiel bietet verschiedene Schiffstypen zur Auswahl und zufällig erscheinende Gegner.
 
-
-Ein spannendes Shooter-Spiel mit Pygame, in dem du feindliche Schiffe abschießen und dein eigenes Raumschiff steuern musst, um Punkte zu sammeln und Level aufzusteigen. Das Spiel speichert Highscores in einer SQLite-Datenbank.
-
-## Inhalt
+## Inhaltsverzeichnis
 
 - [Features](#features)
 - [Installation](#installation)
 - [Verwendung](#verwendung)
-- [Spielsteuerung](#spielsteuerung)
-- [Highscore-Anzeige](#highscore-anzeige)
-- [Datenbank](#datenbank)
-- [Credits](#credits)
+- [Steuerung](#steuerung)
+- [Screenshots](#screenshots)
+- [Technologien](#technologien)
+- [Mitwirkende](#mitwirkende)
 - [Lizenz](#lizenz)
 
 ## Features
 
-- Spielersteuerung eines Raumschiffs mit Tastatur
-- Schießen von Kugeln zur Zerstörung von Feinden
-- Gegnerische Schiffe erscheinen mit zunehmender Schwierigkeit
-- Animation von Sternen im Hintergrund
-- Speicherung von Highscores in einer SQLite-Datenbank
+- Auswahl aus 10 verschiedenen Spieler-Schiffen
+- Zufällig erscheinende Gegner
+- Highscore-System mit Speicherung der Spielername, Punkte, Level und Spielzeit
 - Hintergrundmusik und Soundeffekte
-- Anzeige der Highscores mit animiertem GIF-Hintergrund
+- Animierter Sternenhintergrund
 
 ## Installation
 
-1. **Python installieren**: Stelle sicher, dass Python 3.12 oder neuer installiert ist. Lade Python von der [offiziellen Webseite](https://www.python.org/downloads/) herunter und installiere es.
+### Voraussetzungen
 
-2. **Abhängigkeiten installieren**: Installiere die benötigten Python-Bibliotheken mit `pip`.
+- Python 3.12
+- Pygame
+- Pillow
+- SQLite3
 
-    ```bash
-    pip install pygame pillow
-    ```
+### Schritt-für-Schritt-Anleitung
 
-3. **Projektdateien**: Stelle sicher, dass du die folgenden Dateien in deinem Projektverzeichnis hast:
-    - `main.py` (das Hauptspielskript)
-    - `mnt/data/weapons.png` (Bild der Waffe)
-    - `mnt/data/enemy.png` (Bild des Gegners)
-    - `mnt/data/ship.png` (Bild des Spielerschiffs)
-    - `mnt/data/engine_ship.png` (Bild des Triebwerks)
-    - `mnt/data/heart.png` (Bild des Herzens)
-    - `mnt/data/background.mp3` (Hintergrundmusik)
-    - `mnt/data/hit.wav` (Soundeffekt für Treffer)
-    - `mnt/data/shot.wav` (Soundeffekt für Schüsse)
-    - `mnt/data/death.wav` (Soundeffekt für Tod)
-    - `mnt/data/intro.gif` (animierter Hintergrund für Highscore-Anzeige)
+1. **Projekt klonen**
+
+   ```sh
+   git clone https://github.com/kruemmel-python/Arcade-Space-Shooter.git
+   cd Arcade-Space-Shooter
+   ```
+
+2. **Virtuelle Umgebung erstellen**
+
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # Für Windows: venv\Scripts\activate
+   ```
+
+3. **Abhängigkeiten installieren**
+
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+4. **Spiel starten**
+
+   ```sh
+   python main.py
+   ```
 
 ## Verwendung
 
-Starte das Spiel mit folgendem Befehl:
+### Hauptmenü
 
-```bash
-python main.py
-```
+Nach dem Start des Spiels sehen Sie das Hauptmenü mit den folgenden Optionen:
 
-## Spielsteuerung
+- Highscores: Zeigt die besten Spieler an
+- Spiel starten: Beginnen Sie ein neues Spiel
+- Beenden: Beenden Sie das Spiel
 
-- **Pfeiltasten**: Bewege das Raumschiff nach links, rechts, oben oder unten.
-- **Leertaste**: Schieße Kugeln ab.
-- **Escape**: Beende das Spiel.
+### Spielername und Schiffsauswahl
 
-## Highscore-Anzeige
+1. Geben Sie Ihren Spielernamen (3 Buchstaben) ein.
+2. Wählen Sie Ihr Schiff mit den Pfeiltasten links und rechts aus und drücken Sie `Enter`, um das Spiel zu starten.
 
-Nach dem Start des Spiels wird zunächst die Highscore-Anzeige gezeigt. Drücke die `Enter`-Taste, um zum Spiel zu gelangen.
+## Steuerung
 
-## Datenbank
+- **Pfeiltasten**: Bewegung des Schiffs
+- **Leertaste**: Schießen
+- **ESC**: Zurück zum Hauptmenü
 
-Die Highscores werden in einer SQLite-Datenbank (`highscores.db`) gespeichert. Die Datenbank enthält eine Tabelle `highscores` mit den folgenden Spalten:
+## Screenshots
 
-- `name` (TEXT): Der Name des Spielers.
-- `score` (INTEGER): Der erzielte Punktestand.
-- `level` (INTEGER): Das erreichte Level.
+![Hauptmenü](screenshots/main_menu.png)
+*Hauptmenü des Spiels*
 
-## Credits
+![Schiffsauswahl](screenshots/ship_selection.png)
+*Auswahl des Spielerschiffs*
 
-- **Programmierer**: Ralf Krümmel
-- **Bibliotheken**: [Pygame](https://www.pygame.org/), [Pillow](https://python-pillow.org/)
+![Spiel](screenshots/game.png)
+*Spielbildschirm*
+
+## Technologien
+
+- [Pygame](https://www.pygame.org/): Bibliothek für die Spieleentwicklung
+- [Pillow](https://python-pillow.org/): Bildverarbeitungsbibliothek
+- [SQLite3](https://www.sqlite.org/index.html): Leichtgewichtige SQL-Datenbank
+
+## Mitwirkende
+
+- [kruemmel-python](https://github.com/kruemmel-python)
 
 ## Lizenz
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die [LICENSE](LICENSE)-Datei für Details.
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der [LICENSE](LICENSE)-Datei.
+
+
