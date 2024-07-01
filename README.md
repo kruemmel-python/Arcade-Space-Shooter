@@ -81,13 +81,13 @@ Nach dem Start des Spiels sehen Sie das Hauptmenü mit den folgenden Optionen:
 
 ## Screenshots
 
-![Hauptmenü](screenshots/main_menu.png)
+![Hauptmenü](https://github.com/kruemmel-python/Arcade-Space-Shooter/assets/169469747/f7fd3830-bca8-425f-b5fb-35e2b3321ff7)
 *Hauptmenü des Spiels*
 
-![Schiffsauswahl](screenshots/ship_selection.png)
+![Schiffsauswahl](https://github.com/kruemmel-python/Arcade-Space-Shooter/assets/169469747/44d9aab4-0151-4d97-a644-a8c70ce2fffc)
 *Auswahl des Spielerschiffs*
 
-![Spiel](screenshots/game.png)
+![SPiel](https://github.com/kruemmel-python/Arcade-Space-Shooter/assets/169469747/5b157ea1-0702-4993-bf15-54a30d2baa77)
 *Spielbildschirm*
 
 ## Technologien
